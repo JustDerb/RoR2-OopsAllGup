@@ -1,0 +1,10 @@
+﻿{
+    "name": "OopsAllGup",
+    "version_number": "1.0.0",
+    "website_url": "https://github.com/JustDerb/RoR2-OopsAllGup",
+    "description": "Oops, all gups! Modify how Gups work in a run. Change the number of lives, how many spawn after splitting, and forcing Kin runs to be Gups.",
+    "dependencies": [
+        "bbepis-BepInExPack-5.4.1801",
+        "RiskofThunder-HookGenPatcher-1.2.3"
+    ]
+}
