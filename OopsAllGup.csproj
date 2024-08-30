@@ -1,7 +1,7 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
-    <TargetFramework>netstandard2.0</TargetFramework>
+    <TargetFramework>netstandard2.1</TargetFramework>
   </PropertyGroup>
 
   <ItemGroup>
@@ -15,19 +15,16 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Reference Include="MMHOOK_Assembly-CSharp">
-      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\MMHOOK\MMHOOK_Assembly-CSharp.dll</HintPath>
-    </Reference>
     <Reference Include="MMHOOK_RoR2">
-      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\MMHOOK\MMHOOK_RoR2.dll</HintPath>
+      <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\MMHOOK\MMHOOK_RoR2.dll</HintPath>
     </Reference>
     <Reference Include="RiskOfOptions">
-      <HintPath>..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\Rune580-Risk_Of_Options\RiskOfOptions.dll</HintPath>
+      <HintPath>..\..\..\..\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\Rune580-Risk_Of_Options\RiskOfOptions\RiskOfOptions.dll</HintPath>
     </Reference>
   </ItemGroup>
 
   <Target Name="PostBuild" AfterTargets="PostBuildEvent">
-    <Exec Command="copy /Y &quot;$(TargetPath)&quot; &quot;C:\Users\justin\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\OopsAllGup\lib\$(TargetFileName)&quot;&#xD;&#xA;copy /Y &quot;$(SolutionDir)manifest.json&quot;  &quot;C:\Users\justin\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\OopsAllGup\&quot;&#xD;&#xA;copy /Y &quot;$(SolutionDir)icon.png&quot;  &quot;C:\Users\justin\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\OopsAllGup\&quot;&#xD;&#xA;copy /Y &quot;$(SolutionDir)README.md&quot;  &quot;C:\Users\justin\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\OopsAllGup\&quot;" />
+    <Exec Command="copy /Y &quot;$(TargetPath)&quot; &quot;C:\Users\justd\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\JustDerb-OopsAllGup\$(TargetFileName)&quot;&#xD;&#xA;copy /Y &quot;$(SolutionDir)manifest.json&quot;  &quot;C:\Users\justd\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\JustDerb-OopsAllGup\&quot;&#xD;&#xA;copy /Y &quot;$(SolutionDir)icon.png&quot;  &quot;C:\Users\justd\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\JustDerb-OopsAllGup\&quot;&#xD;&#xA;copy /Y &quot;$(SolutionDir)README.md&quot;  &quot;C:\Users\justd\AppData\Roaming\r2modmanPlus-local\RiskOfRain2\profiles\Testing\BepInEx\plugins\JustDerb-OopsAllGup\&quot;" />
   </Target>
 
 </Project>

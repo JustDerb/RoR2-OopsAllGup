@@ -8,7 +8,7 @@ namespace OopsAllGup
     {
         private static bool? _enabled;
 
-        public static bool enabled
+        public static bool Enabled
         {
             get
             {
@@ -22,7 +22,7 @@ namespace OopsAllGup
 
         public static void InstallRiskOfOptions()
         {
-            void AddOption(BaseOption option)
+            static void AddOption(BaseOption option)
             {
                 ModSettingsManager.AddOption(option, OopsAllGup.GUID, OopsAllGup.ModName);
             }

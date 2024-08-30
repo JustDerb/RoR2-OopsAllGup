@@ -14,6 +14,13 @@ This is due to protections in the Spawn Director so that the game doesn't spawn 
 
 # Changelog
 
+### 1.0.1
+
+* Update code to work with the new Risk of Rain 2 DLC: Seekers of the Storm
+* Refactored code to remove IL injection (and use a regular hook instead). This should allow this mod to hopefully continue working after most game updates and be more friendly to other mods.
+* Reduced log spam
+* Fixed logging to now be filterable in the mod window
+
 ### 1.0.0
 
 * Initial release
